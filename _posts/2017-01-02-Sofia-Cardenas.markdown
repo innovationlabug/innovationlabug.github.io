@@ -3,6 +3,7 @@ layout: nodate
 title:  "Sofi Cárdenas"
 date:   2017-01-02
 category: staff
+icon: "sofi.jpg"
 description: >
     Working on workshops and projects related to AI and microcontrollers.
 permalink: /:categories/:title.html

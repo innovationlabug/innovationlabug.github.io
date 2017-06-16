@@ -3,6 +3,7 @@ layout: nodate
 title:  "Bonnie Milián"
 date:   2017-01-05
 category: staff
+icon: "bonnie.jpg"
 description: >
     Developer and maker, ReactJS and NodeJS fan.
 permalink: /:categories/:title.html

@@ -3,6 +3,7 @@ layout: nodate
 title:  "Luis Jimenez"
 date:   2017-01-03
 category: staff
+icon: "luis.jpg"
 description: >
     Interested in computer vision, hardware and education.
 permalink: /:categories/:title.html

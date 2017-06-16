@@ -3,6 +3,7 @@ layout: nodate
 title:  "Eve Cruz"
 date:   2017-01-04
 category: staff
+icon: "eve.jpg"
 description: >
     Labs and workshops instructor with a huge interest in Biomedic field.
 permalink: /:categories/:title.html

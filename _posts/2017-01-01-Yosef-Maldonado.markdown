@@ -3,6 +3,7 @@ layout: nodate
 title:  "Yosef Maldonado"
 date:   2017-01-01
 category: staff
+icon: "yosef.jpg"
 description: >
     Innovative and a maker experienced in development of courses focused on college students.
 permalink: /:categories/:title.html

@@ -3,6 +3,7 @@ layout: nodate
 title:  "Adrián Catalán"
 date:   2017-01-06
 category: staff
+icon: "adrian.jpg"
 description: >
     Innovation Lab leader and Google Developer Expert.
 permalink: /:categories/:title.html
