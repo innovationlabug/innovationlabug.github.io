@@ -4,7 +4,7 @@ title:  "Oculus + Watson"
 date:   2017-04-01
 category: proyecto
 description: >
-    Switch between the evirtual world and the real world thanks to Tango.
+	Create objects in a virtual environment thanks to IBM Watson.
 permalink: /:categories/:title.html
 ---
 

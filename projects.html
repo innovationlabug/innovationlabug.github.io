@@ -3,14 +3,30 @@ layout: default
 title: Projects - Innovation Lab
 ---
 
+<style type="text/css">
+.iconDetails {margin-left:1%;float:left;height:120px;width:120px;} 
+.container2 {width:100%;height:auto;padding:1%;}
+h4 {margin:0px;}
+</style>
+
 <div class="home" id="home">
   <h1 class="pageTitle">Projects</h1>
   <ul class="posts noList">
       {% for post in site.categories.proyecto %}
       <li>
-        <span class="date">{{ post.date | date: '%B, %Y' }}</span>
-        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
+        <div class='container2'>
+          <div>
+            {% if post.icon %}
+              <img src='../assets/img/icons/{{post.icon}}' class='iconDetails'>
+            {% else %}
+              <img src='../assets/img/icons/default.png' class='iconDetails'>
+            {% endif %}
+          </div>
+          <div style='margin-left:140px;'>
+            <h4><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+            <div style="font-size:1em">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 100 }}{% endif %}</div>
+          </div>
+        </div>
       </li>
       {% endfor %}
   </ul>

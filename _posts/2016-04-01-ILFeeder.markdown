@@ -4,7 +4,7 @@ title:  "ILFeeder"
 date:   2016-04-01
 category: proyecto
 description: >
-    Pet Feeder with voice command or in an App, with Particle’s Photon + IFTTT + React Native + Google Home
+    Pet Feeder with voice command or in an App, with Particle’s Photon.
 permalink: /:categories/:title.html
 ---
 
