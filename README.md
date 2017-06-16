@@ -1,2 +1,3 @@
-# innovationlabug.github.io
-Webpage for Innovation Lab at Galileo University.
+# InnnovationLabUG.github.io
+
+Webpage, work in progress.
