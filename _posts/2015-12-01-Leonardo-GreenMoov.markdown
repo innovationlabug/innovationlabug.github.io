@@ -3,7 +3,7 @@ layout: noday
 title:  "Leonardo GreenMoov"
 date:   2015-12-01
 category: proyecto
-icon: "leonardo.png"
+icon: "leonardo.jpg"
 description: >
     Telepresence robot based on InMoov and controlled by an Oculus Rift and Leap Motion.
 permalink: /:categories/:title.html

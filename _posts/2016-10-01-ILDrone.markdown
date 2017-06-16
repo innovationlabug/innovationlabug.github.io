@@ -3,6 +3,7 @@ layout: noday
 title:  "ILDrone"
 date:   2016-10-01
 category: proyecto
+icon: "ildrone.jpg"
 description: >
     Drone Flight Controller, with Intel Edison + ArDrone 2.0 + NodeJS + Johhny-Five.
 permalink: /:categories/:title.html
