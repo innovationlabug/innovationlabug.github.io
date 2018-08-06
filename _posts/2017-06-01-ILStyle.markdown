@@ -18,4 +18,4 @@ Status: Finished, improvements are being made.
 
 On the mobile app take a photo and send it to FireBase, then the Node Server download the picture and calls the Style Transfer that applies the paintings style to the photo, then are showed in a web app, the photos can be send through email.
 
-![Phone app](/assets/img/projects-bonnie/style-phone.png
+![Phone app](/assets/img/projects-bonnie/style-phone.png)
