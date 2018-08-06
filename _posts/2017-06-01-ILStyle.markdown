@@ -3,6 +3,7 @@ layout: noday
 title:  "ILStyle"
 date:   2017-06-01
 category: proyecto
+icon: "style-icon.png"
 description: >
     Style Transfer of  famous paintings to photos, with NodeJS + TensorFlow.
 permalink: /:categories/:title.html
