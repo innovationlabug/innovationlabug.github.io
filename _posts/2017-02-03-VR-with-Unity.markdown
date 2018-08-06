@@ -14,4 +14,4 @@ Tools used: Unity game engine, Vuforia library
  
 Time for this workshop: 4 hours
 
-Contact: Yosef Maldonado, ivanyosef@galileo.edu
+Contact: Sofi Cárdenas, ascardenas@galileo.edu
