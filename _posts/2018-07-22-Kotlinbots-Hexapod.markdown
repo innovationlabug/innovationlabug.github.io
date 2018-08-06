@@ -3,7 +3,6 @@ layout: noday
 title:  "Kotlinbots Hexapod"
 date:   2018-07-22
 category: proyecto
-icon: "default.jpg"
 description: >
     Android can also be used to program robots!
 permalink: /:categories/:title.html
