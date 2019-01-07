@@ -16,6 +16,6 @@ Herramientas de software: Unity, librería Vuforia
 
 Duración (versión corta): 4 horas
 
-Duración (versión extendida): Ocho sesiones de dos horas, repartidos a lo largo de tres semanas
+Duración (versión extendida): Seis sesiones de dos horas, repartidos a lo largo de tres semanas
 
 Contacto: Sofi Cárdenas, ascardenas@galileo.edu
