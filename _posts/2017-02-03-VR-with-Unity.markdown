@@ -4,7 +4,7 @@ title:  "AR y VR con Unity"
 date:   2017-02-03
 category: taller
 description: >
-    Create your first AR Android app using Vuforia and Unity.
+    Crea tu primera aplicación de realidad aumentada para Android.
 permalink: /:categories/:title.html
 ---
 
