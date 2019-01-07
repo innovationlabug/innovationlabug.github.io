@@ -8,7 +8,7 @@ description: >
 permalink: /:categories/:title.html
 ---
 
-<a href="{{ site.url }}assets/microbit-info.pdf"/>Información completa del taller</a>
+<a href="{{ site.url }}assets/microbit-info.pdf">Información completa del taller</a>
 
 Microbit es una minicomputadora que fue creada en Reino Unido para enseñar a niños a programar. Su tamaño compacto y su facilidad de uso ha sido clave para que este sea utilizado en diversos centros educativos internacionales. La tarjeta cuenta con un procesador ARM Cortex, botones, sensor de calor, sensor de luz, I/O generales, sensores de movimiento (brújula y acelerómetro) y una matriz de LEDs.
 
