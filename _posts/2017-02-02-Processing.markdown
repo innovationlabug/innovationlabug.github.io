@@ -4,16 +4,18 @@ title:  "Processing"
 date:   2017-02-02
 category: taller
 description: >
-    Make an interactive robot using Raspberry Pi and IBM Watson.
+    Interfaces gráficas de forma sencilla para Arduino.
 permalink: /:categories/:title.html
 ---
 
-Processing lets you jump directly to the canvas. Start drawing with a couple lines of code, and add a couple more to have interaction with the mouse and keyboard; you can even add interactions with your own hardware, thanks to Arduino.
+Processing permite ir directo a la interfaz gráfica. Comienza a dibujar con un par de líneas de código, agrega un par más para añadir interacción con el mouse y teclado. Finalmente, agrega interacción con tu propio hardware, a través de Arduino.
 
-This workshop is aimed to high school students interested in programming and electronics. They program a game, complete with visual interface, and build their own game controller using Arduino.
+Este taller está dirigido a estudiantes de secundaria interesados en programación y electrónica. Programarán un juego, incluyendo la interfaz gráfica que podrán modificar libremente, y construirán su propio control utilizando Arduino.
 
-Tools used: Processing, Arduino.
+Herramientas de software: Processing, Arduino
 
-Time for this workshop: 2.5 hours (requires knowledge of Arduino) or 4 hours (no requirements)
+Herramientas de hardware: Arduino
 
-Contact: Luis Jimenez, luiscu@galileo.edu
+Tiempo sugerido: 2.5 horas (requiere conocimiento previo de Arduino) o 4 horas (sin requisitos)
+
+Contacto: Sofi Cárdenas, ascardenas@galileo.edu
