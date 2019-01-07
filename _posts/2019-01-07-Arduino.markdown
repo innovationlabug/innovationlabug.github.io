@@ -1,6 +1,6 @@
 ---
 layout: nodate
-title:  "Arduino (tres semanas)"
+title:  "Arduino"
 date:   2019-01-07
 category: taller
 description: >
@@ -8,7 +8,7 @@ description: >
 permalink: /:categories/:title.html
 ---
 
-<a href="https://github.com/innovationlabug/innovationlabug.github.io/raw/master/assets/arduino-tres-semanas-info.pdf">Información completa del taller</a>
+<a href="https://github.com/innovationlabug/innovationlabug.github.io/raw/master/assets/arduino-tres-semanas-info.pdf">Información completa del taller de tres semanas</a>
 
 El curso inicia con una introducción a electrónica, donde los alumnos aprenderán sobre distintos componentes. Luego se continua con una instroducción a la programación, donde se presentan los conceptos más importantes y cómo estos se aplican al realizar un programa.
 
@@ -20,6 +20,8 @@ Herramientas de software: Arduino, Processing
 
 Herramientas de harware: Arduino
 
-Duración: Ocho sesiones de dos horas, repartidas a lo largo de tres semanas
+Duración (versión corta): 3 horas
+
+Duración (versión extendida): Ocho sesiones de dos horas, repartidas a lo largo de tres semanas
 
 Contacto: Sofi Cárdenas, ascardenas@galileo.edu
