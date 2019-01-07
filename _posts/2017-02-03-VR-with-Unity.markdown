@@ -1,6 +1,6 @@
 ---
 layout: nodate
-title:  "VR with Unity"
+title:  "AR y VR con Unity"
 date:   2017-02-03
 category: taller
 description: >
@@ -8,10 +8,10 @@ description: >
 permalink: /:categories/:title.html
 ---
 
-In this Workshop you will learn the very basics of Unity, how to use this environment, the different panels inside Unity, game objects, prefabs and other things. The goal is to create your first AR Android app using Vuforia and Unity, you will learn how to use different features of Vuforia and how to make your app AR interactive.
+En este taller aprenderán lo básico de Unity: cómo usar el entorno, los diferentes paneles dentro de Unity, game objects, prefabs, y más. El objetivo es crear su primera apllicación de realidad aumentada (AR) para Android, utilizando Vuforia y Unity. Se utilizará la librería Vuforia para hacer interactiva a la aplicación de AR.
 
-Tools used: Unity game engine, Vuforia library
- 
-Time for this workshop: 4 hours
+Herramientas de software: Unity, librería Vuforia
 
-Contact: Sofi Cárdenas, ascardenas@galileo.edu
+Tiempo sugerido: 4 horas
+
+Contacto: Sofi Cárdenas, ascardenas@galileo.edu
