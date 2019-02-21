@@ -1284,6 +1284,9 @@ body {
           @media only screen and (max-width: 380px) {
             .title-container .inner-container .title-container .title .innovation-logo {
               width: 200px; } }
+        @media only screen and (orientation: portrait) {
+          .title-container .inner-container .title-container .title {
+            transform: translateY(-10px); } }
       .title-container .inner-container .title-container .title-menu {
         display: flex;
         justify-content: space-between;
@@ -1298,6 +1301,10 @@ body {
         width: 658px;
         flex-wrap: wrap;
         max-width: 100%; }
+        @media only screen and (orientation: portrait) {
+          .title-container .inner-container .title-container .title-menu {
+            opacity: 1 !important;
+            transform: translateY(0) !important; } }
         @media only screen and (max-width: 750px) {
           .title-container .inner-container .title-container .title-menu {
             width: 580px; } }
