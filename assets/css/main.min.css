@@ -716,7 +716,8 @@ nav {
     justify-content: flex-start;
     align-items: center; }
     .staff-container .staff-card.boss .staff-image:hover, .staff-container .staff-card.boss .staff-image:active, .staff-container .staff-card.boss .staff-image:focus {
-      border: 6px solid #94bdff; }
+      border: 6px solid transparent;
+      background: #94bdff; }
       .staff-container .staff-card.boss .staff-image:hover + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.boss .staff-image:active + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.boss .staff-image:focus + .staff-name-container + .staff-job + .staff-information {
         border-bottom: 6px solid #94bdff; }
       .staff-container .staff-card.boss .staff-image:hover + .staff-name-container + .staff-job, .staff-container .staff-card.boss .staff-image:active + .staff-name-container + .staff-job, .staff-container .staff-card.boss .staff-image:focus + .staff-name-container + .staff-job {
@@ -726,7 +727,8 @@ nav {
     .staff-container .staff-card.boss .staff-image .staff-see-more {
       color: #94bdff; }
     .staff-container .staff-card.graphic-designer .staff-image:hover, .staff-container .staff-card.graphic-designer .staff-image:active, .staff-container .staff-card.graphic-designer .staff-image:focus {
-      border: 6px solid #ff91f0; }
+      border: 6px solid transparent;
+      background: #ff91f0; }
       .staff-container .staff-card.graphic-designer .staff-image:hover + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.graphic-designer .staff-image:active + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.graphic-designer .staff-image:focus + .staff-name-container + .staff-job + .staff-information {
         border-bottom: 6px solid #ff91f0; }
       .staff-container .staff-card.graphic-designer .staff-image:hover + .staff-name-container + .staff-job, .staff-container .staff-card.graphic-designer .staff-image:active + .staff-name-container + .staff-job, .staff-container .staff-card.graphic-designer .staff-image:focus + .staff-name-container + .staff-job {
@@ -736,7 +738,8 @@ nav {
     .staff-container .staff-card.graphic-designer .staff-image .staff-see-more {
       color: #ff91f0; }
     .staff-container .staff-card.projects-leader .staff-image:hover, .staff-container .staff-card.projects-leader .staff-image:active, .staff-container .staff-card.projects-leader .staff-image:focus {
-      border: 6px solid #ff8888; }
+      border: 6px solid transparent;
+      background: #ff8888; }
       .staff-container .staff-card.projects-leader .staff-image:hover + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.projects-leader .staff-image:active + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.projects-leader .staff-image:focus + .staff-name-container + .staff-job + .staff-information {
         border-bottom: 6px solid #ff8888; }
       .staff-container .staff-card.projects-leader .staff-image:hover + .staff-name-container + .staff-job, .staff-container .staff-card.projects-leader .staff-image:active + .staff-name-container + .staff-job, .staff-container .staff-card.projects-leader .staff-image:focus + .staff-name-container + .staff-job {
@@ -746,7 +749,8 @@ nav {
     .staff-container .staff-card.projects-leader .staff-image .staff-see-more {
       color: #ff8888; }
     .staff-container .staff-card.workshops-leader .staff-image:hover, .staff-container .staff-card.workshops-leader .staff-image:active, .staff-container .staff-card.workshops-leader .staff-image:focus {
-      border: 6px solid #8effa6; }
+      border: 6px solid transparent;
+      background: #8effa6; }
       .staff-container .staff-card.workshops-leader .staff-image:hover + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.workshops-leader .staff-image:active + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.workshops-leader .staff-image:focus + .staff-name-container + .staff-job + .staff-information {
         border-bottom: 6px solid #8effa6; }
       .staff-container .staff-card.workshops-leader .staff-image:hover + .staff-name-container + .staff-job, .staff-container .staff-card.workshops-leader .staff-image:active + .staff-name-container + .staff-job, .staff-container .staff-card.workshops-leader .staff-image:focus + .staff-name-container + .staff-job {
@@ -756,7 +760,8 @@ nav {
     .staff-container .staff-card.workshops-leader .staff-image .staff-see-more {
       color: #8effa6; }
     .staff-container .staff-card.projects-assistant .staff-image:hover, .staff-container .staff-card.projects-assistant .staff-image:active, .staff-container .staff-card.projects-assistant .staff-image:focus {
-      border: 6px solid #ff8888; }
+      border: 6px solid transparent;
+      background: #ff8888; }
       .staff-container .staff-card.projects-assistant .staff-image:hover + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.projects-assistant .staff-image:active + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.projects-assistant .staff-image:focus + .staff-name-container + .staff-job + .staff-information {
         border-bottom: 6px solid #ff8888; }
       .staff-container .staff-card.projects-assistant .staff-image:hover + .staff-name-container + .staff-job, .staff-container .staff-card.projects-assistant .staff-image:active + .staff-name-container + .staff-job, .staff-container .staff-card.projects-assistant .staff-image:focus + .staff-name-container + .staff-job {
@@ -766,7 +771,8 @@ nav {
     .staff-container .staff-card.projects-assistant .staff-image .staff-see-more {
       color: #ff8888; }
     .staff-container .staff-card.workshops-assistant .staff-image:hover, .staff-container .staff-card.workshops-assistant .staff-image:active, .staff-container .staff-card.workshops-assistant .staff-image:focus {
-      border: 6px solid #8effa6; }
+      border: 6px solid transparent;
+      background: #8effa6; }
       .staff-container .staff-card.workshops-assistant .staff-image:hover + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.workshops-assistant .staff-image:active + .staff-name-container + .staff-job + .staff-information, .staff-container .staff-card.workshops-assistant .staff-image:focus + .staff-name-container + .staff-job + .staff-information {
         border-bottom: 6px solid #8effa6; }
       .staff-container .staff-card.workshops-assistant .staff-image:hover + .staff-name-container + .staff-job, .staff-container .staff-card.workshops-assistant .staff-image:active + .staff-name-container + .staff-job, .staff-container .staff-card.workshops-assistant .staff-image:focus + .staff-name-container + .staff-job {
@@ -873,7 +879,49 @@ nav {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 0 15px; }
+    margin: 0 40px; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.boss .staff-image {
+      border: 6px solid transparent;
+      background: #f7eef1; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.boss .staff-name {
+      color: #94bdff; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.boss .staff-information {
+      background: #94bdff; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.graphic-designer .staff-image {
+      border: 6px solid transparent;
+      background: #f7eef1; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.graphic-designer .staff-name {
+      color: #ff91f0; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.graphic-designer .staff-information {
+      background: #ff91f0; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.projects-leader .staff-image {
+      border: 6px solid transparent;
+      background: #f7eef1; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.projects-leader .staff-name {
+      color: #ff8888; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.projects-leader .staff-information {
+      background: #ff8888; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.workshops-leader .staff-image {
+      border: 6px solid transparent;
+      background: #f7eef1; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.workshops-leader .staff-name {
+      color: #8effa6; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.workshops-leader .staff-information {
+      background: #8effa6; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.projects-assistant .staff-image {
+      border: 6px solid transparent;
+      background: #f7eef1; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.projects-assistant .staff-name {
+      color: #ff8888; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.projects-assistant .staff-information {
+      background: #ff8888; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.workshops-assistant .staff-image {
+      border: 6px solid transparent;
+      background: #f7eef1; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.workshops-assistant .staff-name {
+      color: #8effa6; }
+    .dynamic-expanded-information .section-body .staff-expanded-card.workshops-assistant .staff-information {
+      background: #8effa6; }
     .dynamic-expanded-information .section-body .staff-expanded-card .staff-image {
       position: relative;
       border-radius: 100%;
@@ -881,10 +929,10 @@ nav {
       display: flex;
       width: 200px;
       padding-top: 200px;
-      transition: 0.3s ease;
-      border: 6px solid #94bdff; }
+      transition: 0.4s ease;
+      opacity: 0;
+      transform: scale(0.7); }
       .dynamic-expanded-information .section-body .staff-expanded-card .staff-image .img {
-        transition: 0.3s ease;
         width: 100%;
         height: auto;
         position: absolute;
@@ -910,7 +958,6 @@ nav {
             height: 60px; }
     .dynamic-expanded-information .section-body .staff-expanded-card .staff-name {
       margin-top: 5px;
-      color: #94bdff;
       display: flex;
       justify-content: center;
       font-size: 18px;
@@ -923,12 +970,11 @@ nav {
         .dynamic-expanded-information .section-body .staff-expanded-card .staff-name .staff-flag img {
           width: 20px; }
     .dynamic-expanded-information .section-body .staff-expanded-card .staff-company {
-      color: gray;
+      color: gainsboro;
       z-index: 1; }
     .dynamic-expanded-information .section-body .staff-expanded-card .staff-information {
       padding: 5px 10px;
-      margin-top: 3px;
-      background: #94bdff; }
+      margin-top: 6px; }
       @media only screen and (max-width: 650px) {
         .dynamic-expanded-information .section-body .staff-expanded-card .staff-information {
           font-size: 12px; } }
@@ -958,6 +1004,9 @@ nav {
         &:last-child{
             margin-bottom: 15px;
         } */ }
+    .workshops-container .workshop-card:hover img, .workshops-container .workshop-card:focus img, .workshops-container .workshop-card:active img {
+      transform: scale(1.1);
+      filter: brightness(0.8); }
     .workshops-container .workshop-card:hover .workshop-info-container, .workshops-container .workshop-card:focus .workshop-info-container, .workshops-container .workshop-card:active .workshop-info-container {
       opacity: 0; }
     .workshops-container .workshop-card:hover .btn-back, .workshops-container .workshop-card:focus .btn-back, .workshops-container .workshop-card:active .btn-back {
@@ -966,8 +1015,8 @@ nav {
       height: 200px !important; }
     .workshops-container .workshop-card img {
       position: absolute;
-      filter: blur(6px) brightness(0.5);
-      transition: 0.2s ease; }
+      filter: brightness(0.5);
+      transition: 0.4s ease; }
     .workshops-container .workshop-card .workshop-info-container {
       display: flex;
       margin-right: 15px;
@@ -1349,7 +1398,7 @@ body {
           font-size: 12px; } }
       @media only screen and (max-width: 500px) {
         .dynamic-information .section-body p {
-          font-size: 11px; } }
+          font-size: 12px; } }
 
 .title-container {
   position: fixed;
@@ -1440,7 +1489,7 @@ body {
             width: 280px; } }
         @media only screen and (max-width: 380px) {
           .title-container .inner-container .title-container .title-menu {
-            width: 205px; } }
+            width: 215px; } }
         .title-container .inner-container .title-container .title-menu .btn-menu {
           padding: 10px 15px;
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.34);
@@ -1452,5 +1501,5 @@ body {
               font-size: 12px; } }
           @media only screen and (max-width: 500px) {
             .title-container .inner-container .title-container .title-menu .btn-menu {
-              font-size: 11px;
+              font-size: 12px;
               padding: 5px 10px; } }
