@@ -561,6 +561,17 @@
             $('#innovation-logo').attr('src','assets/img/logo.png');
         }
 
+        if(window.location.hash) {
+            var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+            if(hash == 'staff'){
+                hideIndex();
+                generateStaff();
+            }
+            // hash found
+        } else {
+            // No hash found
+        }
+
         $('.btn-menu').click((event)=>{
             hideIndex();
 
