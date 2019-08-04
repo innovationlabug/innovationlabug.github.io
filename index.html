@@ -27,10 +27,12 @@
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-    <!-- Importaciones -->
+    <!-- Importaciones. Por favor nunca usen Bootstrap. -->
+    <!-- Este archivo contiene los estilos de toda la app. Se utilizó SASS por lo que finalmente se generó un solo archivo con los estilos más compacto. -->
     <link rel="stylesheet" href="assets/css/main.min.css">
     <script src="assets/js/jquery.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Los tres archivos que hacen la función de base de datos. -->
     <script src="assets/js/staff.js" type="text/javascript"></script>
     <script src="assets/js/workshops.js" type="text/javascript"></script>
     <script src="assets/js/projects.js" type="text/javascript"></script>
@@ -39,6 +41,7 @@
 
     <title>Innovation Lab</title>
 </head>
+<!-- Estructura principal de la aplcicación. -->
 <body>
     <span id="background" class="background">
     </span>
@@ -58,6 +61,7 @@
             </span>
         </span>
     </span>
+    <!-- En esta sección se carga la información de los generateX() -->
     <span id="dynamic-information" class="dynamic-information">
         <span class="section-title">
 
@@ -66,6 +70,7 @@
             
         </span>
     </span>
+    <!-- En esta sección se carga la información de generateExpandedStaff(String name) -->
     <span id="dynamic-expanded-information" class="dynamic-expanded-information">
         <span class="section-body">
             
@@ -88,11 +93,16 @@
 </body>
 </html>
 
+<!-- TODO: Modularizar el script en diferentes archivos. Sustituir jQuery por Javascript puro. -->
 <script>
+    // Hay 3 archivos js que se importan: staff.js, wrkshops.js y projects.js. 
+    // Debido a la carencia de una base de datos usé archivos js para guardar y administrar los registros. 
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Agu', 'Sep', 'Oct', 'Nov', 'Dec'];
     var inExpanded = false;
     var orderStaff = new Array();
 
+    // En general todos los métodos generateX() generan una sección X en la aplicación.
+    // generateHome() genera la sección de inicio con la información que se ve.
     function generateHome(){
         var element = $('#dynamic-information');
         element.find('.section-title').html('HOME');
@@ -126,6 +136,9 @@
         element.css('z-index', '1');
     }
 
+
+    //generateProjects() genera la sección de proyectos. 
+    // Aquí definí las etiquetas que pueden estar en el archivo projects.js.
     function generateProjects(){
         var correlative = 0;
         var element = $('#dynamic-information');
@@ -157,7 +170,7 @@
         html += '</span>';
         element.find('.section-body').html(html);
 
-
+        // Esto es lo que pasa cuando se le da click a una tarjeta de proyecto.
         $('.project-card').click((event)=>{
             element = $(event.currentTarget);
             if(element.hasClass('expanded')){
@@ -209,6 +222,8 @@
         element.css('z-index', '1');
     }
 
+    //generateWorkshops() genera la sección de talleres. 
+    // Aquí definí las etiquetas que pueden estar en el archivo workshops.js.
     function generateWorkshops(){
         var correlative = 0;
         var element = $('#dynamic-information');
@@ -242,6 +257,7 @@
         html += '</span>';
         element.find('.section-body').html(html);
 
+        // Esto es lo que pasa cuando se le da click a una tarjeta de taller.
         $('.workshop-card').click((event)=>{
             element = event.currentTarget;
             if($(element).hasClass('expanded')){
@@ -283,6 +299,9 @@
                 html += '</p>';
                 html += '<p>';
                 html += '<i class="far fa-envelope"></i>';
+
+                // Buscando el encargado para mostrar su información. 
+                // TODO: Conectar este elemento con la sección expandida de staff. Mejorar el rendimiento de la búsqueda, tal vez con map.
                 var findedStaff;
                 staff.forEach((staffMember)=>{
                     if(staffMember.name == workshops[element.id].contact){
@@ -315,10 +334,10 @@
         element.css('z-index', '1');
     }
 
+    // generateExpandedStaff(String name) genera la sección de staff expandido. 
+    // Esto quiere decir que muestra la infomarción del staff seleccionado con nombre "name".
     function generateExpandedStaff(name){
         inExpanded = true;
-
-        // console.log(name);
 
         var findedStaff;
         staff.forEach((staffMember)=>{
@@ -371,8 +390,6 @@
 
         var actualImg = element.find('.section-body').find('.staff-expanded-card').find('.staff-image');
 
-        console.log(actualImg);
-
         if(actualImg.find('.img')[0] != undefined) actualImg.find('.img')[0].onload = () => {
             actualImg.css('opacity', '1');
             actualImg.css('transform', 'scale(1)');
@@ -387,6 +404,7 @@
         $('#dynamic-expanded-information').css('opacity', '1');
     }
 
+    // hideExpanded() se llama al darle click a la flecha en la esquina inferior izquierda y la sección staff expanded está abierta.
     function hideExpanded(){
         inExpanded = false;
         $('#dynamic-information').css('opacity', '1');
@@ -398,10 +416,14 @@
         
     }
 
+    // getSecondName(String name) es la función utilizada para ordenar la sección de staff. 
+    // Si se quiere ordenar por nombre en vez de apellido solo hay que cambiar el 1 por el 0.
     function getSecondName(name){
         return name.split(" ")[1];
     }
 
+    // generateStaff() genera la sección de staff. Ordena los registros por apellido. 
+    // El ordenamiento se hace al cargar la página por primera vez. 
     function generateStaff(){
         var element = $('#dynamic-information');
         element.find('.section-title').html('STAFF');
@@ -471,6 +493,7 @@
         element.css('transform', 'translateY(0)');
         element.css('z-index', '1');
 
+        //Esto es lo que sucede cuando se le da click a la imagen de la carta del staff.
         $('.staff-image').click((event)=>{
             element = $(event.currentTarget);
             var image_path = element.find('.img').attr('src');
@@ -480,12 +503,12 @@
         });
     }
 
+    // hideIndex() es llamada al darle click a una sección del index para esconderlo.
     function hideIndex(){
         $('#copyright').css('bottom', '-23px');
         $('#galileo-logo').css('bottom', '-118px');
         $('#title-container').css('opacity', '0');
         $('#title-container').css('transform', 'translateY(20px)');
-        // $('#background').css('filter', 'brightness(0.3) blur(6px)');
         $('#back-container').find('.btn-back').css('transform', 'translateX(0)');
         $('body').css('overflow-y', 'auto');
         $('#title-container').css('z-index', '-1');
@@ -497,13 +520,13 @@
         });
     }
 
+    // showIndex() es llamdo al darle clicl a la flecha de la esquina inferior izquierda cuando no está abierto el staff expandido.
     function showIndex(){
         $('#copyright').css('bottom', '130px');
         $('#galileo-logo').css('bottom', '0');
         var element = $('#title-container');
         element.css('opacity', '1');
         element.css('transform', 'translateY(0)');
-        // $('#background').css('filter', 'brightness(0.3) blur(6px)');
         $('#back-container').find('.btn-back').css('transform', 'translateX(-85px)');
         element = $('#dynamic-information');
         element.css('opacity', '0');
@@ -517,6 +540,7 @@
         },400);
     }
 
+    // Esto es para cambiar de logo dependiendo de si se está en teléfono o en computadora.
     $(window).resize(()=>{
         if($(window).width() > 750){
             $('#innovation-logo').attr('src','assets/img/logo3.png');
@@ -529,6 +553,8 @@
         $('.background').css('opacity', '1');
         $('.background').css('transform', 'scale(1.2)');
 
+        // Ordenando el staff por el valor que devuelva getSecondName(String name). 
+        // El resultado se almacena en orderStaff.
         var inserted = false;
         staff.forEach((element, index) => {
             inserted = false;
@@ -550,7 +576,6 @@
             }
         });
 
-        console.log();
         $('#innovation-logo')[0].onload = ()=>{
             $('#innovation-logo').css('opacity', '1');
         };
@@ -561,17 +586,18 @@
             $('#innovation-logo').attr('src','assets/img/logo.png');
         }
 
+        // Esto es para pasar hash en la url y que abra la sección directamente. 
+        // Ej. http://innovacion.galileo.edu/#staff
         if(window.location.hash) {
-            var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+            var hash = window.location.hash.substring(1);
             if(hash == 'staff'){
                 hideIndex();
                 generateStaff();
             }
-            // hash found
-        } else {
-            // No hash found
         }
 
+        // Acciones al darle click a un botón del index. Cada uno abre una sección. 
+        // Tomar en cuenta que la página es dinámica, únicamente se abre index.html.
         $('.btn-menu').click((event)=>{
             hideIndex();
 
@@ -595,6 +621,7 @@
             }
         });
 
+        // Esto es llamado al darle click a la flecha de la esquina inferior izquierda.
         $('#back').click(()=>{
             if(inExpanded) hideExpanded();
             else showIndex();
