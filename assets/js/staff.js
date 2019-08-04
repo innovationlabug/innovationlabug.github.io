@@ -42,15 +42,15 @@ var staff = [
         email: 'ikuzuhunter@gmail.com',
         emoji: '🤷‍♀'
     },
-    {
-        name : 'Henry Campos',
-        information : 'Systems engineer, web developer/designer, AI interested and math lover.',
-        image : 'henry.jpg',
-        gif : 'https://media.giphy.com/media/WS72clqgPYJB7oRUIW/giphy.gif',
-        job : 'projects-assistant',
-        email : 'henry.campos@galileo.edu',
-        emoji: '👅'
-    },
+    // {
+    //     name : 'Henry Campos',
+    //     information : 'Systems engineer, web developer/designer, AI interested and math lover.',
+    //     image : 'henry.jpg',
+    //     gif : 'https://media.giphy.com/media/WS72clqgPYJB7oRUIW/giphy.gif',
+    //     job : 'projects-assistant',
+    //     email : 'henry.campos@galileo.edu',
+    //     emoji: '👅'
+    // },
     {
         name : 'Fernando López',
         information : 'Working on workshops with main interest on mechanical design, love to make things work.',
