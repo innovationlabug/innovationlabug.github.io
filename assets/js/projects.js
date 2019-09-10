@@ -12,12 +12,12 @@ var projects = [
     },
     {
         name : 'Kotlinbots Hexapod',
-        video : '<iframe width="640" height="360" src="https://youtube.com/embed/LTkxGlqgI2w" frameborder="0" allowfullscreen=""></iframe>',
+        video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/wVIX3BSyAYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         introduction : 'Android can also be used to program robots!',
         thumbnail : 'hexapod.png',
         summary : 'In this project I’m programming an hexapod robot using Android Things running on a Raspberry Pi.',
         status : 'In progress.',
-        description : ['Android Things can be installed on a Raspberry Pi and other devices and it let us program robots as if we are programming mobile apps, using Java and now Kotlin.','Thanks to this we can easily capture images with the camera, use a Firebase database to store the images and later retrieve them in a phone app, and even use Cloud Vision API to analyze the contents of the images.'],
+        description : ['Android Things is an embedded operating system, used to control hardware and Internet of Things devices. It can be installed on a Raspberry Pi (among other platforms), and it let us program robots as if we were programming mobile apps, using Java or Kotlin.','The robot has six legs to allow it to walk in an stable way. The movement of the hexapod can be controlled by an Android app, made by us in the lab, or can also be controlled using computer vision.','We can use the camera on the robot to capture pictures, store them to a Firebase database, and send them to Google Cloud Vision API to analyze their contents and determine how to move the robot.'],
         images : ['hexapod1.jpg','hexapod2.jpg'],
         month : 7,
         year : 2018
