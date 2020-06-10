@@ -36,8 +36,11 @@
     <script src="assets/js/staff.js" type="text/javascript"></script>
     <script src="assets/js/workshops.js" type="text/javascript"></script>
     <script src="assets/js/projects.js" type="text/javascript"></script>
-    
+    <script src="assets/js/form.js" type="text/javascript"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script> 
 
     <title>Innovation Lab</title>
 </head>
@@ -55,7 +58,8 @@
                     <a id="home-access" class="btn-menu">Home</a>
                     <a id="staff-access" class="btn-menu">Staff</a>
                     <a id="projects-access" class="btn-menu">Projects</a>
-                    <a id="presentations-access" class="btn-menu">Events</a>
+                    <!-- <a id="presentations-access" class="btn-menu">Events</a> -->
+                    <a id="sign-up-access" class="btn-menu">Sign up form</a>
                     <a id="workshops-access" class="btn-menu">Workshops</a>
                 </span>
             </span>
@@ -95,8 +99,19 @@
 
 <!-- TODO: Modularizar el script en diferentes archivos. Sustituir jQuery por Javascript puro. -->
 <script>
-    // Hay 3 archivos js que se importan: staff.js, wrkshops.js y projects.js. 
-    // Debido a la carencia de una base de datos usé archivos js para guardar y administrar los registros. 
+    /* Firebase para formularios */
+    const config = {
+        apiKey: "AIzaSyCUaR_CbMeqmSRmfniTOs4mNK4VjCJBUOw",
+        authDomain: "formularios-innovation-lab.firebaseapp.com",
+        databaseURL: "https://formularios-innovation-lab.firebaseio.com",
+        projectId: "formularios-innovation-lab",
+        storageBucket: "formularios-innovation-lab.appspot.com",
+        messagingSenderId: "328644214050",
+        appId: "1:328644214050:web:8532f345ced2e73338797b"
+    };
+
+    firebase.initializeApp(config);
+
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Agu', 'Sep', 'Oct', 'Nov', 'Dec'];
     var inExpanded = false;
     var orderStaff = new Array();
@@ -135,6 +150,135 @@
         element.css('transform', 'translateY(0)');
         element.css('z-index', '1');
     }
+
+
+
+    /* SIGN UP FORM START */
+    // generateSignUp() genera el formulario de registro
+    var formData = {};
+
+    function generateSignUp(){
+
+        var element = $('#dynamic-information');
+        element.find('.section-title').html('SIGN UP');
+        var html = '';
+
+        form.forEach(element => {
+
+            if (element.title != null) {
+                html += '<span class="subtitle">' + element.title + '</span>';
+            }
+            if (element.description != null) {
+                html += '<p>' + element.description + '</p>';
+            }
+
+            switch(element.type) {
+                case 'formData':
+                    break;
+                case 'textbox':
+                    // data
+                    formData[element.id] = "text";
+
+                    // html
+                    html += '<input type="text" id="' + element.id + '" name="' + element.id + '"></input>';
+
+                    break;
+                case 'checkbox':
+                    // data
+                    check = {};
+
+                    // html
+                    var i = 0;
+                    element.options.forEach(option => {
+                        // id y name llevaran un correlativo para no repetirse
+                        var str = element.id + i;
+
+                        // data
+                        // usar como llave el value, valor útil para quien recibe el formulario
+                        check[option.value] = false;
+
+                        // html
+                        html += '<span class="singleOption">';
+                        html += '<label for="' + str + '">';
+                        html += '<input type="checkbox" id="' + str + '" name="' + str + '" value="' + option.value + '">';
+                        html += '<span class="singleOptionSpacer"></span>';
+                        html += option.display + '</label>';
+                        html += '</span>';
+                        i++;
+                    });
+
+                    // data
+                    formData[element.id] = check;
+
+                    break;
+                case 'radio':
+                    // data
+                    formData[element.id] = "radio";
+
+                    // html
+                    var i = 0;
+                    element.options.forEach(option => {
+                        // todas las opciones del radio necesitan el mismo nombre
+                        var name = element.id;
+                        // id correlativo para no repetirse
+                        var id = element.id + i;
+
+                        html += '<span class="singleOption">';
+                        html += '<label for"' + id + '">';
+                        html += '<input type="radio" id="' + id + '" name="' + name + '" value="' + option.value + '">';
+                        html += '<span class="singleOptionSpacer"></span>';
+                        html += option.display + '</label>';
+                        html += '</span>';
+                        i++;
+                    });
+
+                    break;
+            }
+        });
+
+        html += '<p><a id="send-form" class="btn-menu" onclick="submitForm()">Enviar datos</a></p>';
+
+        element.find('.section-body').html(html);
+
+        element.css('opacity', '1');
+        element.css('transform', 'translateY(0)');
+        element.css('z-index', '1');
+    }
+
+    /* find me */
+    function submitForm () {
+        Object.keys(formData).forEach(nombre => {
+            if (formData[nombre] == "text") {
+                formData[nombre] = $('[name="' + nombre + '"]').val();
+            } else if (formData[nombre] == "radio") {
+                formData[nombre] = $('[name="' + nombre + '"]:checked').val();
+            } else {
+                var i = 0;
+                Object.keys(formData[nombre]).forEach(elem => {
+                    formData[nombre][elem] = $('[name="' + nombre + i + '"]').prop("checked");
+                    i++;
+                });
+            }
+        });
+
+        //console.log(formData);
+        storeData(formData);
+    }
+
+    // Almacenar datos en Firebase
+    function storeData (data) {
+        data.timestamp = firebase.database.ServerValue.TIMESTAMP;
+
+        var ref = firebase.database().ref('submits/').push(data, function (err) {
+            if (err) {
+                console.warn(err);
+            } else {
+                alert("Se han guardado tus datos con éxito.");
+            }
+        });
+    }
+    /* SIGN UP END */
+
 
 
     //generateProjects() genera la sección de proyectos. 
@@ -614,6 +758,9 @@
                 }break;
                 case 'presentations-access':{
                     console.log('hola');
+                }break;
+                case 'sign-up-access':{
+                    generateSignUp();
                 }break;
                 case 'workshops-access':{
                     generateWorkshops();

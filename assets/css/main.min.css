@@ -139,10 +139,27 @@ input::-moz-focus-inner {
 input {
   line-height: normal; }
 
-input[type="checkbox"],
+.singleOption {
+  flex-direction: row;
+}
+.singleOptionSpacer {
+  width: 10px;
+  display: inline-block;
+}
+
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
+
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding-left: 250px;
+  padding-right: 10px;
+}
+
+label {
+  padding-left: 50px;
+}
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
