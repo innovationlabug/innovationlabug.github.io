@@ -37,6 +37,7 @@
     <script src="assets/js/workshops.js" type="text/javascript"></script>
     <script src="assets/js/projects.js" type="text/javascript"></script>
     <script src="assets/js/form.js" type="text/javascript"></script>
+    <script src="assets/js/welcome.js" type="text/javascript"></script>
 
     <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
@@ -55,6 +56,7 @@
                     <img id="innovation-logo" class="innovation-logo" src="" alt="">
                 </span>
                 <span class="title-menu">
+                	<a id="welcome-access" class="btn-menu">Bienvenida 2021</a>
                     <a id="home-access" class="btn-menu">Home</a>
                     <a id="staff-access" class="btn-menu">Staff</a>
                     <a id="projects-access" class="btn-menu">Projects</a>
@@ -85,7 +87,7 @@
             </a>
         </span> -->
     </span>
-    <span id="copyright" class="copyright">© 2019 Innovation Laboratory.</span>
+    <span id="copyright" class="copyright">© 2021 Innovation Lab, Universidad Galileo</span>
     <span id="galileo-logo" class="galileo-logo">
         <img src="assets/img/galileo-logo.png" alt="Universidad Galileo">
     </span>
@@ -100,6 +102,7 @@
 <!-- TODO: Modularizar el script en diferentes archivos. Sustituir jQuery por Javascript puro. -->
 <script>
     /* Firebase para formularios */
+    /*
     const config = {
         apiKey: "AIzaSyCUaR_CbMeqmSRmfniTOs4mNK4VjCJBUOw",
         authDomain: "formularios-innovation-lab.firebaseapp.com",
@@ -111,10 +114,14 @@
     };
 
     firebase.initializeApp(config);
+    */
 
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Agu', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var monthsSp = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
     var inExpanded = false;
     var orderStaff = new Array();
+
+    var lastElement = "";
 
     // En general todos los métodos generateX() generan una sección X en la aplicación.
     // generateHome() genera la sección de inicio con la información que se ve.
@@ -152,9 +159,9 @@
     }
 
 
-
     /* SIGN UP FORM START */
     // generateSignUp() genera el formulario de registro
+    /*
     var formData = {};
 
     function generateSignUp(){
@@ -244,8 +251,10 @@
         element.css('transform', 'translateY(0)');
         element.css('z-index', '1');
     }
+    */
 
     /* find me */
+    /*
     function submitForm () {
         Object.keys(formData).forEach(nombre => {
             if (formData[nombre] == "text") {
@@ -277,6 +286,7 @@
             }
         });
     }
+    */
     /* SIGN UP END */
 
 
@@ -317,6 +327,7 @@
         // Esto es lo que pasa cuando se le da click a una tarjeta de proyecto.
         $('.project-card').click((event)=>{
             element = $(event.currentTarget);
+            // aaaa
             if(element.hasClass('expanded')){
                 element.removeClass('expanded');
                 element.parent().removeClass('expanded');
@@ -365,6 +376,100 @@
         element.css('transform', 'translateY(0)');
         element.css('z-index', '1');
     }
+
+
+
+    function generateWelcome(){
+        var correlative = 0;
+        var element = $('#dynamic-information');
+        element.find('.section-title').html('¡Bienvenidos Promoción 2021!');
+        var html = '';
+        html += '<span class="welcome-container">';
+        welcomeEntries.forEach(element => {
+            html += `<span id="${correlative}" class="welcome-card">`;
+	            html += `<img src="${element.thumbnail}">`;
+	            html += '<span class="welcome-info-container">';
+		            html += '<span class="welcome-name">';
+		            	html += element.name;
+		            html += '</span>';
+		            html += '<span class="welcome-date">';
+		            	html += monthsSp[element.month - 1] + ' ' + element.year
+		            html += '</span>';
+		            html += '<p class="welcome-introduction">';
+		            html += element.introduction;
+		            html += '</p>';
+	            html += '</span>';
+	            html += '<a class="btn-back">';
+	            html += '<i class="fas fa-arrow-up"></i>';
+	            html += '</a>';
+            html += '</span>';
+            correlative++;
+        });
+        html += '</span>';
+        html += `<span id="welcome-information" class="welcome-information">`;
+        html += '</span>';
+        element.find('.section-body').html(html);
+
+        // Esto es lo que pasa cuando se le da click a una tarjeta de proyecto.
+        $('.welcome-card').click((event)=>{
+            element = $(event.currentTarget);
+
+            lastElement = element;
+            // aaaa
+            if(element.hasClass('expanded')){
+                element.removeClass('expanded');
+                element.parent().removeClass('expanded');
+                $('#background').removeClass('unfocused');
+                element.find('.btn-back').html('<i class="fas fa-arrow-up"></i>');
+                $('#welcome-information').removeClass('expanded');
+            }else{
+                element.addClass('expanded');
+                element.parent().addClass('expanded');
+                $('#background').addClass('unfocused');
+                element.find('.btn-back').html('<i class="fas fa-plus"></i>');
+
+                html = '';
+                var entry = welcomeEntries[element.attr('id')];
+
+                html += '<span class="entry-summary">';
+                html += entry.summary;
+                html += '</span>';
+
+                if(typeof(entry.video) !== 'undefined'){
+                    html += '<span id="youtube-video" class="youtube-video">';
+                    html += entry.video;
+                    html += '</span>';
+                }
+                (entry.description).forEach((desc)=>{
+                    html += '<p>';
+                    html += desc;
+                    html += '</p>';
+                });
+                
+                (entry.images).forEach((imgsrc)=>{
+                	//html += '<p>';
+                	html += `<div class="wimg"><img src="${imgsrc}"></div>`;
+                	//html += '</p>';
+                })
+
+                $('#welcome-information').html(html);
+                if(typeof(entry.video) !== 'undefined'){
+                    var video = $('#youtube-video').find('iframe');
+                    video.on('load',()=>{
+                        video.addClass('expanded');
+                    });
+                }
+                $('#welcome-information').addClass('expanded');
+            }
+        });
+
+        element.css('opacity', '1');
+        element.css('transform', 'translateY(0)');
+        element.css('z-index', '1');
+    }
+
+
+
 
     //generateWorkshops() genera la sección de talleres. 
     // Aquí definí las etiquetas que pueden estar en el archivo workshops.js.
@@ -479,7 +584,7 @@
     }
 
     // generateExpandedStaff(String name) genera la sección de staff expandido. 
-    // Esto quiere decir que muestra la infomarción del staff seleccionado con nombre "name".
+    // Esto quiere decir que muestra la información del staff seleccionado con nombre "name".
     function generateExpandedStaff(name){
         inExpanded = true;
 
@@ -737,6 +842,9 @@
             if(hash == 'staff'){
                 hideIndex();
                 generateStaff();
+            } else if (hash == 'welcome') {
+            	hideIndex();
+            	generateWelcome();
             }
         }
 
@@ -747,6 +855,9 @@
 
             var element = event.target;
             switch(element.id){
+            	case 'welcome-access':{
+            		generateWelcome();
+            	}break;
                 case 'home-access':{
                     generateHome();
                 }break;
@@ -770,6 +881,20 @@
 
         // Esto es llamado al darle click a la flecha de la esquina inferior izquierda.
         $('#back').click(()=>{
+        	if (lastElement != "") {
+        		element = lastElement;
+        		if(element.hasClass('expanded')){
+	                element.removeClass('expanded');
+	                element.parent().removeClass('expanded');
+	                $('#background').removeClass('unfocused');
+	                element.find('.btn-back').html('<i class="fas fa-arrow-up"></i>');
+	                $('#welcome-information').removeClass('expanded');
+	            }
+	            lastElement = "";
+        		return;
+        	}
+
+
             if(inExpanded) hideExpanded();
             else showIndex();
         });

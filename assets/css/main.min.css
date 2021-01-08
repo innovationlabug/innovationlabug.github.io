@@ -1520,3 +1520,154 @@ body {
             .title-container .inner-container .title-container .title-menu .btn-menu {
               font-size: 12px;
               padding: 5px 10px; } }
+
+.eventImage {
+  height: 400px;
+  
+  overflow: hidden;
+}
+
+.eventImage img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.welcome-container {
+  margin-top: 25px;
+  display: grid;
+  grid-template: auto/repeat(2, 50%);
+  justify-items: center;
+  align-items: center;
+  margin: 25px 15px 15px 15px; }
+  @media only screen and (max-width: 1000px) {
+    .welcome-container {
+      grid-template: auto/repeat(2, 50%); } }
+  @media only screen and (max-width: 900px) {
+    .welcome-container {
+      grid-template: auto / 1fr; } }
+  .welcome-container.expanded {
+    grid-template: 250px / 1fr; }
+    .welcome-container.expanded .welcome-card {
+      display: none; }
+      .welcome-container.expanded .welcome-card.expanded {
+        display: flex;
+        width: 100%;
+        height: 100%; }
+        .welcome-container.expanded .welcome-card.expanded img {
+          transform: scale(1.1);
+          filter: blur(20px) brightness(0.6); }
+        .welcome-container.expanded .welcome-card.expanded .welcome-info-container {
+          max-width: 90%; }
+          .welcome-container.expanded .welcome-card.expanded .welcome-info-container .welcome-name {
+            background: none;
+            font-size: 24px;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 0.34); }
+          .welcome-container.expanded .welcome-card.expanded .welcome-info-container .welcome-introduction, .welcome-container.expanded .welcome-card.expanded .welcome-info-container .welcome-date {
+            display: flex;
+            opacity: 1; }
+  .welcome-container .welcome-card {
+    margin: 15px 0;
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    transition: 0.2s ease;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .welcome-container .welcome-card:hover img, .welcome-container .welcome-card:active img, .welcome-container .welcome-card:focus img {
+      transform: scale(1.1);
+      filter: blur(6px) brightness(0.6); }
+    .welcome-container .welcome-card:hover .welcome-info-container, .welcome-container .welcome-card:active .welcome-info-container, .welcome-container .welcome-card:focus .welcome-info-container {
+      opacity: 0; }
+    .welcome-container .welcome-card:hover .btn-back, .welcome-container .welcome-card:active .btn-back, .welcome-container .welcome-card:focus .btn-back {
+      transform: rotate(45deg) scale(1);
+      opacity: 1; }
+    .welcome-container .welcome-card img {
+      transition: 0.2s ease;
+      filter: blur(0);
+      transform: scale(1);
+      width: auto;
+      height: 100%; }
+    .welcome-container .welcome-card .welcome-info-container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      max-width: 180px;
+      opacity: 1;
+      transition: 0.2s ease; }
+      .welcome-container .welcome-card .welcome-info-container .welcome-name {
+        font-size: 16px;
+        color: white;
+        z-index: 1;
+        background: black;
+        padding: 5px 10px;
+        display: flex;
+        transition: 0.2s ease;
+        justify-content: center; }
+      .welcome-container .welcome-card .welcome-info-container .welcome-introduction, .welcome-container .welcome-card .welcome-info-container .welcome-date {
+        display: none;
+        opacity: 0;
+        transition: 0.2s ease; }
+      .welcome-container .welcome-card .welcome-info-container .welcome-date {
+        font-size: 16px;
+        justify-content: center;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.34);
+        margin-bottom: 5px;
+        text-transform: uppercase; }
+    .welcome-container .welcome-card .btn-back {
+      position: absolute;
+      transform: rotate(0) scale(0);
+      opacity: 0; }
+
+.welcome-information {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  z-index: -1;
+  margin-top: -150px;
+  transition: 0.2s ease;
+  opacity: 0;
+  height: 150px;
+  overflow: hidden; }
+  .welcome-information.expanded {
+    margin-top: 0;
+    opacity: 1;
+    z-index: 1;
+    height: auto; }
+  .welcome-information p {
+    margin: 2.5px 0 !important; }
+  .welcome-information .welcome-summary {
+    font-size: 15px;
+    text-align: justify;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.34);
+    margin-bottom: 5px; }
+  .welcome-information .welcome-status i {
+    margin-right: 12px; }
+  .welcome-information .youtube-video {
+    margin: 15px 0; }
+
+  .welcome-information.expanded img {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+
