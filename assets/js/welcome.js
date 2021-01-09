@@ -18,7 +18,6 @@ var welcomeEntries = [
         thumbnail : 'assets/img/iwd/06.png',
 
         summary : 'Evento con el objetivo de empoderar a mujeres que trabajan o tienen interés en tecnología a través de visibilizar esfuerzos, aumentar vínculos de comunidad y brindar los recursos necesarios para el crecimiento profesional.',
-        video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/wVIX3BSyAYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         
         description : [],
         images : ['assets/img/iwd/01.png', 'assets/img/iwd/02.png', 'assets/img/iwd/03.png', 'assets/img/iwd/04.png', 'assets/img/iwd/05.png', 'assets/img/iwd/06.png', 'assets/img/iwd/07.png', 'assets/img/iwd/08.png', 'assets/img/iwd/09.png'],
@@ -64,11 +63,11 @@ var welcomeEntries = [
         year : 2018
     },
     {
-        name : 'Proyecto: Realidad Aumentada',
-        introduction : 'Proyectar modelos 3D al identificar un patron 2D.',
-        thumbnail : 'assets/img/projs/ar.png',
+        name : 'Impresoras 3D',
+        introduction : 'Herramienta para fabricación de prototipos.',
+        thumbnail : 'assets/img/projs/printer.png',
 
-        summary : 'Dentro del visor de cartón se coloca un teléfono que está ejecutando una aplicación de Android. La aplicación está construída en Unity, y gracias a la librería Vuforia se pueden detectar patrones impresos, y sobre estos proyectar un modelo 3D que será visto por el usuario en la pantalla del celular.',
+        summary : 'Utiliza carretes de plástico (como PLA o ABS), lo derrite, y va formando una pieza. La pieza se forma conforme el extruser se mueve, línea por línea, y capa por capa. La pieza a formarse puede ser diseñada en distintos programas, como SolidWorks.',
         video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/9VsicGk3a9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         
         description : [],
@@ -77,12 +76,12 @@ var welcomeEntries = [
         year : 2018
     },
     {
-        name : 'Proyecto: Realidad Aumentada',
-        introduction : 'Proyectar modelos 3D al identificar un patron 2D.',
-        thumbnail : 'assets/img/projs/ar.png',
+        name : 'Oculus Rift',
+        introduction : 'Casco de realidad virtual para experiencias inmersivas.',
+        thumbnail : 'assets/img/projs/oculus.png',
 
-        summary : 'Dentro del visor de cartón se coloca un teléfono que está ejecutando una aplicación de Android. La aplicación está construída en Unity, y gracias a la librería Vuforia se pueden detectar patrones impresos, y sobre estos proyectar un modelo 3D que será visto por el usuario en la pantalla del celular.',
-        video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/9VsicGk3a9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        summary : 'Oculus es un casco de realidad virtual, cuenta con pantalla de alta definición y audífonos para crear una experiencia inmersiva. Los sensores del casco, junto con los sensores sobre la mesa y los controles el usuario tiene, permiten moverse e interactuar con los objetos dentro de los programas de realidad virtual.',
+        video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/lbMM6-fbEJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         
         description : [],
         images : [],
@@ -90,12 +89,12 @@ var welcomeEntries = [
         year : 2018
     },
     {
-        name : 'Proyecto: Realidad Aumentada',
-        introduction : 'Proyectar modelos 3D al identificar un patron 2D.',
-        thumbnail : 'assets/img/projs/ar.png',
+        name : 'Mindstorms EV3',
+        introduction : 'Kit de Lego para facilitar la construcción de tu primer robot.',
+        thumbnail : 'assets/img/projs/rubik.png',
 
-        summary : 'Dentro del visor de cartón se coloca un teléfono que está ejecutando una aplicación de Android. La aplicación está construída en Unity, y gracias a la librería Vuforia se pueden detectar patrones impresos, y sobre estos proyectar un modelo 3D que será visto por el usuario en la pantalla del celular.',
-        video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/9VsicGk3a9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        summary : 'Kit de Lego que permite construir y programar robots. Cuenta con varios sensores para obtener información del entorno, y varios motores para ejecutar acciones. Puede programarse mediante programación con bloques, con herramientas como LabView, o con distintos lenguajes de programación.',
+        video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/TiIgyVEQQgg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         
         description : [],
         images : [],

@@ -1563,6 +1563,12 @@ body {
       grid-template: auto / 1fr; } }
   .welcome-container.expanded {
     grid-template: 250px / 1fr; }
+    .welcome-container.expanded .welcome-subtitle {
+      display: none;
+    }
+    .welcome-container.expanded .welcome-spacer {
+      display: none;
+    }
     .welcome-container.expanded .welcome-card {
       display: none; }
       .welcome-container.expanded .welcome-card.expanded {
@@ -1581,6 +1587,17 @@ body {
           .welcome-container.expanded .welcome-card.expanded .welcome-info-container .welcome-introduction, .welcome-container.expanded .welcome-card.expanded .welcome-info-container .welcome-date {
             display: flex;
             opacity: 1; }
+  .welcome-container .welcome-subtitle {
+    background-color: #00000000;
+    color: white;
+    width: 400px;
+    height: 120px;
+    font-size: 40px;
+    padding-top: 10px;
+    display: inline;
+    overflow-x: visible;
+  }
+
   .welcome-container .welcome-card {
     margin: 15px 0;
     position: relative;
