@@ -62,12 +62,20 @@ var staff = [
     },
     {
         name : 'Jerry Palacios',
-        information : 'Working working working working working.',
+        information : 'Hardware and software lover. Mainly focused in Embedded Systems.',
         image : 'jerry.jpg',
         gif: 'https://media.giphy.com/media/ZFWQMMq9hYiJ7AOlWy/giphy.gif',
         job : 'projects-assistant',
         email : 'jerry.palacios@galileo.edu',
         emoji: '😛'
+    },
+    {
+        name : 'Kevin Hernandez',
+        information : 'Interested in artificial intelligence and mobile development.',
+        image : 'kevin.jpg',
+        job : 'projects-assistant',
+        email : 'hernandez.kevin@galileo.edu',
+        emoji : '🧐'
     }
 ];
 
