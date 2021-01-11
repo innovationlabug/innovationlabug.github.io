@@ -1446,6 +1446,11 @@ body {
   height: 100vh;
   z-index: 1;
   transition: 0.4s ease; }
+@media only screen and (max-height: 750px) {
+  .title-container {
+    transform: translateY(-60px);
+  }
+}
   .title-container .inner-container {
     position: relative;
     display: flex;
@@ -1542,6 +1547,7 @@ body {
             .title-container .inner-container .title-container .title-menu .btn-menu {
               font-size: 12px;
               padding: 5px 10px; } }
+}
 
 .eventImage {
   height: 400px;
@@ -1598,6 +1604,15 @@ body {
   width: 100%;
   height: 400px;
 }
+#alt-googleform {
+  display: none;
+}
+#main-form a:link {
+  color: #aaaaff;
+}
+#main-form a:visited {
+  color: #ffaaff;
+}
 @media only screen and (max-width: 500px) {
   #main-youtube{
     height: 300px;
@@ -1605,7 +1620,14 @@ body {
 
   #main-googleform {
     height: 300px;
+    display: none;
   }
+
+  #alt-googleform {
+    display: inline-block;
+    font-size: 30px;
+    padding: 15px;
+  } 
 }
 
 
@@ -1630,6 +1652,9 @@ body {
     grid-template: 250px / 1fr; 
   }
     .welcome-container.expanded .welcome-subtitle {
+      display: none;
+    }
+    .welcome-container.expanded .welcome-subtitle-in {
       display: none;
     }
     .welcome-container.expanded .welcome-spacer {
@@ -1670,7 +1695,7 @@ body {
     overflow-x: visible;
   }
   .welcome-container .welcome-subtitle-in {
-    background-color: #00002244;
+    background-color: #44445566;
     color: white;
     width: 400px;
     height: 300px;
