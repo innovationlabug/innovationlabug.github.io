@@ -392,21 +392,24 @@
         var element = $('#dynamic-information');
         element.find('.section-title').html('¡Bienvenidos Promoción 2021!');
         var html = '';
+
+		html += '<div id="main-video" class="welcome-top-container">';
+			html += '<div class="welcome-top-subtitle">¿Qué es el Laboratorio de Innovación?</div>';
+			html += '<div class="welcome-top-text">El Laboratorio de Innovación tiene como objetivo el crear un vínculo entre tecnologías de vanguardia con Guatemala, promoviendo su estudio e investigación de la mano de expertos internacionales y eventos o proyectos que fomenten la práctica de nuevas disciplinas y enriquezcan la experiencia de nuestros participantes.</div>';
+			html += '<iframe id="main-youtube" src="https://www.youtube.com/embed/NK3GVn-qq6A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+		html += '</div>';
+
         html += '<span class="welcome-container">';
+        
         welcomeEntries.forEach(element => {
         	if (correlative == 0) {
-        		html += '<div class="welcome-subtitle">Innovation Lab</div>';
-        		html += '<div class="welcome-spacer"></div>';
+        		html += '<div class="welcome-subtitle-in">Educación</div>';
+        		//html += '<div class="welcome-spacer"></div>';
         	}
-        	if (correlative == 1) {
-        		html += '<div class="welcome-spacer"></div>';
-        		html += '<div class="welcome-subtitle">Educación</div>';
-        		html += '<div class="welcome-spacer"></div>';
-        	}
-        	if (correlative == 4) {
-        		html += '<div class="welcome-spacer"></div>';
-        		html += '<div class="welcome-subtitle">Proyectos</div>';
-        		html += '<div class="welcome-spacer"></div>';
+        	if (correlative == 3) {
+        		//html += '<div class="welcome-spacer"></div>';
+        		html += '<div class="welcome-subtitle-in">Proyectos</div>';
+        		//html += '<div class="welcome-spacer"></div>';
         	}
             html += `<span id="${correlative}" class="welcome-card">`;
 	            html += `<img src="${element.thumbnail}">`;
@@ -430,6 +433,11 @@
         html += '</span>';
         html += `<span id="welcome-information" class="welcome-information">`;
         html += '</span>';
+
+        html += '<div id="main-form" class="welcome-top-container">';
+			html += '<div class="welcome-top-subtitle">¿Quieres participar como voluntario?</div>';
+			html += '<iframe id="main-googleform" src="https://forms.gle/NNNzRKHnSLzrXmL68" frameborder="0"></iframe>';
+		html += '</div>';
         element.find('.section-body').html(html);
 
         // Esto es lo que pasa cuando se le da click a una tarjeta de proyecto.
@@ -441,12 +449,20 @@
             if(element.hasClass('expanded')){
                 element.removeClass('expanded');
                 element.parent().removeClass('expanded');
+
+                $('#main-video').removeClass('expanded');
+                $('#main-form').removeClass('expanded');
+
                 $('#background').removeClass('unfocused');
                 element.find('.btn-back').html('<i class="fas fa-arrow-up"></i>');
                 $('#welcome-information').removeClass('expanded');
             }else{
                 element.addClass('expanded');
                 element.parent().addClass('expanded');
+
+                $('#main-video').addClass('expanded');
+                $('#main-form').addClass('expanded');
+
                 $('#background').addClass('unfocused');
                 element.find('.btn-back').html('<i class="fas fa-plus"></i>');
 
@@ -910,6 +926,10 @@
         		if(element.hasClass('expanded')){
 	                element.removeClass('expanded');
 	                element.parent().removeClass('expanded');
+
+	                $('#main-video').removeClass('expanded');
+                	$('#main-form').removeClass('expanded');
+
 	                $('#background').removeClass('unfocused');
 	                element.find('.btn-back').html('<i class="fas fa-arrow-up"></i>');
 	                $('#welcome-information').removeClass('expanded');

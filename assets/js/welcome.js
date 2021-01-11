@@ -1,4 +1,5 @@
-var welcomeEntries = [
+/*
+
     {
         name : '¿Qué es Innovation Lab?',
         introduction : 'Laboratorio de Innovación, FISICC, Universidad Galileo.',
@@ -13,6 +14,11 @@ var welcomeEntries = [
         month : 1,
         year : 2021
     },
+
+*/
+
+
+var welcomeEntries = [
 
     {
         name : 'Evento: Google I/O Extended',
