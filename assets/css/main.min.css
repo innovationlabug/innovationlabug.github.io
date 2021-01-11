@@ -1346,6 +1346,28 @@ body {
     .copyright {
       font-size: 11px; } }
 
+  .logos {
+  position: fixed;
+  bottom: 160px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.34);
+  transition: 0.4s ease; }
+  @media only screen and (max-width: 650px) {
+    .logos {
+      font-size: 12px; } }
+  @media only screen and (max-width: 500px) {
+    .logos {
+      font-size: 11px; } }
+  .logos img {
+    width: 32px;
+    height: 32px;
+    padding: 0 8px 0 8px;
+  }
+
 .back-container {
   position: fixed;
   bottom: 40px;
@@ -1591,8 +1613,8 @@ body {
     background-color: #00000000;
     color: white;
     width: 400px;
-    height: 60px;
-    font-size: 40px;
+    height: 45px;
+    font-size: 30px;
     padding-top: 10px;
     display: inline;
     overflow-x: visible;
@@ -1601,8 +1623,8 @@ body {
     background-color: #00000000;
     color: white;
     width: 400px;
-    height: 120px;
-    font-size: 40px;
+    height: 90px;
+    font-size: 30px;
     padding-top: 10px;
     display: inline;
     overflow-x: visible;
@@ -1657,10 +1679,10 @@ body {
       opacity: 1;
       transition: 0.2s ease; }
       .welcome-container .welcome-card .welcome-info-container .welcome-name {
-        font-size: 16px;
+        font-size: 20px;
         color: white;
         z-index: 1;
-        background: black;
+        background: #00000080;
         padding: 5px 10px;
         display: flex;
         transition: 0.2s ease;
@@ -1710,6 +1732,18 @@ body {
   .welcome-information.expanded img {
     width: 100%;
     padding: 10px 0;
+  }
+  .welcome-information.expanded a:link {
+    color: #aaaaff;
+  }
+  .welcome-information.expanded a:visited {
+    color: #ffaaff;
+  }
+
+  .welcome-information.expanded .mini {
+    width: 32px;
+    height: 32px;
+    padding: 0 8px 0 8px;
   }
 }
 

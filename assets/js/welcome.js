@@ -4,11 +4,11 @@ var welcomeEntries = [
         introduction : 'Laboratorio de Innovación, FISICC, Universidad Galileo.',
         thumbnail : 'assets/img/microbit.png',
 
-        summary : '',
+        summary : '<a href="https://www.facebook.com/InnovationLabUG"><img class="mini" src="assets/img/social/facebook.png"></a><a href="https://www.instagram.com/innovationlabug/"><img class="mini" src="assets/img/social/instagram.png"></a><a href="https://twitter.com/InnovationLabUG"><img class="mini" src="assets/img/social/twitter.png"></a><a href="https://www.youtube.com/channel/UC1_c36qbHQRF7TCLaMkGD_A"><img class="mini" src="assets/img/social/youtube.png"></a>',
         
         video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/NK3GVn-qq6A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
 
-        description : ['El Laboratorio de Innovación busca cultivar la curiosidad y usar la creatividad como herramienta para el desarrollo de proyectos tecnológicos innovadores. Busca crear un ambiente de trabajo en equipo donde está permitido experimentar y equivocarse, para poder expresarse, aprender y crecer.', 'Nos gusta utilizar design thinking, contrucción de prototipos y uso de tecnologías innovadoras. Contamos con herramientas como impresoras 3D, drones, casco de realidad virtual, kits de Lego Mindstorms y variedad de microprocesadores capaces de IoT.', 'Construye circuitos, desarrolla software, ¡haz que funcione!'],
+        description : ['El Laboratorio de Innovación busca cultivar la curiosidad y usar la creatividad como herramienta para el desarrollo de proyectos tecnológicos innovadores. Busca crear un ambiente de trabajo en equipo donde está permitido experimentar y equivocarse, para poder expresarse, aprender y crecer.', 'Nos gusta utilizar design thinking, contrucción de prototipos y uso de tecnologías innovadoras. Contamos con herramientas como impresoras 3D, drones, casco de realidad virtual, kits de Lego Mindstorms y variedad de microprocesadores capaces de IoT.', 'Construye circuitos, desarrolla software, ¡haz que funcione!', '<a href="https://forms.gle/NNNzRKHnSLzrXmL68">Click aquí si quieres participar como voluntario en alguno de nuestros eventos.</a>'],
         images : [],
         month : 1,
         year : 2021
@@ -19,9 +19,9 @@ var welcomeEntries = [
         introduction : 'El evento más grande de tecnologías de Google en Guatemala.',
         thumbnail : 'assets/img/gio/02.png',
 
-        summary : 'El evento contó con 11 conferencistas internacionales. Dos días, dos jornadas cada día, llenas de conferencias técnicas de Machine Learning, Cloud, Mobile, Web y Product Strategy.',
+        summary : '',
         
-        description : [],
+        description : ['El evento contó con 11 conferencistas internacionales. Dos días, dos jornadas cada día, llenas de conferencias técnicas de Machine Learning, Cloud, Mobile, Web y Product Strategy.', '<a href="https://forms.gle/NNNzRKHnSLzrXmL68">Click aquí si quieres participar como voluntario en alguno de nuestros eventos.</a>'],
         images : ['assets/img/gio/01.png', 'assets/img/gio/02.png', 'assets/img/gio/03.png', 'assets/img/gio/04.png', 'assets/img/gio/05.png'],
         month : 5,
         year : 2019
@@ -32,9 +32,9 @@ var welcomeEntries = [
         introduction : 'Evento conmemorativo del Día Internacional de la Mujer',
         thumbnail : 'assets/img/iwd/06.png',
 
-        summary : 'Evento con el objetivo de empoderar a mujeres que trabajan o tienen interés en tecnología a través de visibilizar esfuerzos, aumentar vínculos de comunidad y brindar los recursos necesarios para el crecimiento profesional.',
+        summary : '',
         
-        description : [],
+        description : ['Evento con el objetivo de empoderar a mujeres que trabajan o tienen interés en tecnología a través de visibilizar esfuerzos, aumentar vínculos de comunidad y brindar los recursos necesarios para el crecimiento profesional.', '<a href="https://forms.gle/NNNzRKHnSLzrXmL68">Click aquí si quieres participar como voluntario en alguno de nuestros eventos.</a>'],
         images : ['assets/img/iwd/01.png', 'assets/img/iwd/02.png', 'assets/img/iwd/03.png', 'assets/img/iwd/04.png', 'assets/img/iwd/05.png', 'assets/img/iwd/06.png', 'assets/img/iwd/07.png', 'assets/img/iwd/08.png', 'assets/img/iwd/09.png'],
         month : 3,
         year : 2020
@@ -44,9 +44,9 @@ var welcomeEntries = [
         introduction : 'Talleres a estudiantes de secundaria.',
         thumbnail : 'assets/img/talleres/04.png',
 
-        summary : 'Talleres sobre electrónica, inteligencia artificial, diseño 3D, realidad aumentada, entre otros, orientados a estudiantes de secundaria interesados en tecnología.',
+        summary : '',
         
-        description : [],
+        description : ['Talleres sobre electrónica, inteligencia artificial, diseño 3D, realidad aumentada, entre otros, orientados a estudiantes de secundaria interesados en tecnología.', '<a href="https://forms.gle/NNNzRKHnSLzrXmL68">Click aquí si quieres participar como voluntario en alguno de nuestros eventos.</a>'],
         images : ['assets/img/talleres/01.png', 'assets/img/talleres/02.png', 'assets/img/talleres/03.png', 'assets/img/talleres/04.png', 'assets/img/talleres/05.png', 'assets/img/talleres/06.png', 'assets/img/talleres/07.png', 'assets/img/talleres/08.png', 'assets/img/talleres/09.png', 'assets/img/talleres/10.png', 'assets/img/talleres/11.png'],
         month : 8,
         year : 2018

@@ -87,6 +87,14 @@
             </a>
         </span> -->
     </span>
+    <span id="logos" class="logos">
+    	<a href="https://www.facebook.com/InnovationLabUG"><img src="assets/img/social/facebook.png"></a>
+    	<a href="https://www.instagram.com/innovationlabug/"><img src="assets/img/social/instagram.png"></a>
+    	<a href="https://twitter.com/InnovationLabUG"><img src="assets/img/social/twitter.png"></a>
+    	<a href="https://www.youtube.com/channel/UC1_c36qbHQRF7TCLaMkGD_A"><img src="assets/img/social/youtube.png"></a>
+
+    </span>
+    <br>
     <span id="copyright" class="copyright">© 2021 Innovation Lab, Universidad Galileo</span>
     <span id="galileo-logo" class="galileo-logo">
         <img src="assets/img/galileo-logo.png" alt="Universidad Galileo">
@@ -768,6 +776,7 @@
 
     // hideIndex() es llamada al darle click a una sección del index para esconderlo.
     function hideIndex(){
+    	$('#logos').css('bottom', '-50px');
         $('#copyright').css('bottom', '-23px');
         $('#galileo-logo').css('bottom', '-118px');
         $('#title-container').css('opacity', '0');
@@ -785,6 +794,7 @@
 
     // showIndex() es llamdo al darle clicl a la flecha de la esquina inferior izquierda cuando no está abierto el staff expandido.
     function showIndex(){
+    	$('#logos').css('bottom', '160px');
         $('#copyright').css('bottom', '130px');
         $('#galileo-logo').css('bottom', '0');
         var element = $('#title-container');
