@@ -387,10 +387,15 @@
         html += '<span class="welcome-container">';
         welcomeEntries.forEach(element => {
         	if (correlative == 0) {
+        		html += '<div class="welcome-subtitle">Innovation Lab</div>';
+        		html += '<div class="welcome-spacer"></div>';
+        	}
+        	if (correlative == 1) {
+        		html += '<div class="welcome-spacer"></div>';
         		html += '<div class="welcome-subtitle">Educación</div>';
         		html += '<div class="welcome-spacer"></div>';
         	}
-        	if (correlative == 3) {
+        	if (correlative == 4) {
         		html += '<div class="welcome-spacer"></div>';
         		html += '<div class="welcome-subtitle">Proyectos</div>';
         		html += '<div class="welcome-spacer"></div>';

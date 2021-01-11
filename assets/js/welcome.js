@@ -1,5 +1,20 @@
 var welcomeEntries = [
     {
+        name : '¿Qué es Innovation Lab?',
+        introduction : 'Laboratorio de Innovación, FISICC, Universidad Galileo.',
+        thumbnail : 'assets/img/microbit.png',
+
+        summary : '',
+        
+        video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/NK3GVn-qq6A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+
+        description : ['El Laboratorio de Innovación busca cultivar la curiosidad y usar la creatividad como herramienta para el desarrollo de proyectos tecnológicos innovadores. Busca crear un ambiente de trabajo en equipo donde está permitido experimentar y equivocarse, para poder expresarse, aprender y crecer.', 'Nos gusta utilizar design thinking, contrucción de prototipos y uso de tecnologías innovadoras. Contamos con herramientas como impresoras 3D, drones, casco de realidad virtual, kits de Lego Mindstorms y variedad de microprocesadores capaces de IoT.', 'Construye circuitos, desarrolla software, ¡haz que funcione!'],
+        images : [],
+        month : 1,
+        year : 2021
+    },
+
+    {
         name : 'Evento: Google I/O Extended',
         introduction : 'El evento más grande de tecnologías de Google en Guatemala.',
         thumbnail : 'assets/img/gio/02.png',

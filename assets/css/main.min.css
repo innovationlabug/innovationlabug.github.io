@@ -1597,6 +1597,16 @@ body {
     display: inline;
     overflow-x: visible;
   }
+  .welcome-container .welcome-subtitle-big {
+    background-color: #00000000;
+    color: white;
+    width: 400px;
+    height: 120px;
+    font-size: 40px;
+    padding-top: 10px;
+    display: inline;
+    overflow-x: visible;
+  }
 
   .welcome-container .welcome-card {
     margin: 15px 0;
@@ -1609,6 +1619,22 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer; }
+  @media only screen and (max-width: 430px) {
+    .welcome-container {
+      margin: 25px 0 15px 0;
+    }
+    .welcome-container .welcome-subtitle {
+      width: 350px;
+      margin: 0 15px 0 0;
+    }
+    .welcome-container .welcome-subtitle-big {
+      width: 350px;
+      margin: 0 15px 0 0;
+    }
+    .welcome-container .welcome-card {
+      width: 350px;
+    }
+  }
     .welcome-container .welcome-card:hover img, .welcome-container .welcome-card:active img, .welcome-container .welcome-card:focus img {
       transform: scale(1.1);
       filter: blur(6px) brightness(0.6); }
