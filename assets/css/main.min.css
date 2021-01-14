@@ -1549,15 +1549,6 @@ body {
               padding: 5px 10px; } }
 }
 
-.eventImage {
-  height: 400px;
-  
-  overflow: hidden;
-}
-
-.eventImage img {
-  width: 100%;
-}
 
 
 
@@ -1620,7 +1611,7 @@ body {
 
   #main-googleform {
     height: 300px;
-    display: none;
+    /*display: none;*/
   }
 
   #alt-googleform {
