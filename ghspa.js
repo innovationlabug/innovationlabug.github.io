@@ -25,10 +25,16 @@
    /* redirect all 404 trafic to index.html */
    function redirect() {
      console.log(l);
+
+     var hash = '#' + l.pathname[1];
+
+     if (l.pathname == '/staff') hash = '#staff';
+     if (l.pathname == '/AdrianCatalan') hash = '#adriancatalan';
+
      l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + repo + '/?' +
               (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~').replace(repo, '') : '') +
               (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-              '#w')
+              hash)
    }
 
    /* resolve 404 redirects into internal routes */
