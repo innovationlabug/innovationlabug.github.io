@@ -1,9 +1,10 @@
 var staff = [
     {
         name: 'Adrián Catalán',
-        information: 'Innovation Lab leader. Google Developer Expert.',
-        courses: 'Cloud, Aplicaciones Web',
-        image: 'adrian.jpg',
+        shortinfo: 'Director del Postgrado en Desarrollo de Software y del Innovation Lab  en Universidad Galileo. Google Developer Expert.',
+        information: 'Director del Postgrado en Desarrollo de Software y del Innovation Lab  en Universidad Galileo. Es Google Developer Expert y mentor de Google for Startups. Con más de 20 años de experiencia, combina docencia y consultoría en inteligencia artificial, cloud computing y software. Ha impulsado comunidades y proyectos tecnológicos con impacto regional e internacional. Apasionado por la ultradistancia y el montañismo, vincula liderazgo y resiliencia con la tecnología.',
+        courses: 'Cloud Computing, Fundamentos de Aplicaciones Web, Ingeniería de Software Avanzada',
+        image: 'adrian.jpeg',
         job: 'boss',
         email: 'adriancatalan@galileo.edu',
 

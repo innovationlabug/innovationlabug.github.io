@@ -676,12 +676,12 @@
             } break;
         }
         html += '</span>';
-        html += `<span class="staff-information" style="text-align: left;">${findedStaff.information}`;
+        html += `<span class="staff-information" style="text-align: justify;">${findedStaff.information}`;
         if (findedStaff.courses) {
-            html += `<br>📚 Courses: ${findedStaff.courses}`;
+            html += `<br><br>📚 Docencia: ${findedStaff.courses}`;
         }
         if (findedStaff.email) {
-            html += `<br>✉️ Email: ${findedStaff.email}`;
+            html += `<br><br>✉️ Email: ${findedStaff.email}`;
         }
         html += `</span>`;
 
@@ -773,9 +773,15 @@
             html += '</span>';
             html += '<span class="staff-information" style="text-align: left;">';
             html += '<p style="text-align: left;">';
-            html += element.information;
+            if (element.shortinfo) {
+                html += element.shortinfo;
+            } else {
+                html += element.information;
+            }
+
+
             if (element.courses) {
-                html += '<br>📚 Courses: ' + element.courses;
+                html += '<br>📚 Docencia: ' + element.courses;
             }
             if (element.email) {
                 html += '<br>✉️ Email: ' + element.email;
@@ -906,6 +912,7 @@
                 generateStaff();
             } else if (hash == 'ac') {
                 hideIndex();
+                generateStaff();
                 generateExpandedStaff('Adrián Catalán');
             }
         }
