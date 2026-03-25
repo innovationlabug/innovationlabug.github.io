@@ -30,6 +30,7 @@
 
     if (l.pathname == '/staff') hash = '#s';
     if (l.pathname == '/AdrianCatalan') hash = '#ac';
+    if (l.pathname == '/adriancatalan') hash = '#ac';
 
     l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + repo + '/?' +
       (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~').replace(repo, '') : '') +
