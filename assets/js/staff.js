@@ -11,7 +11,8 @@ var staff = [
     },
     {
         name: 'Luis Jimenez',
-        information: '',
+        shortinfo: 'Ingeniero de Sistemas. Interesado en educación, programación competitiva, blockchain, y hardware.',
+        information: 'Luis es Ingeniero de Sistemas y Ciencias de la Computación, con Maestría en Investigación de Operaciones. Cuenta con 12 años de experiencia como docente de Ciencias de la Computación. Entre sus intereses investigativos se encuentran la educación de ingeniería, programación competitiva, blockchain y smart contracts, y hardware.',
         image: 'luis2.jpg',
         job: 'projects-leader',
         email: 'luiscu@galileo.edu',
