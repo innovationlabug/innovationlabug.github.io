@@ -11,9 +11,10 @@ var staff = [
     },
     {
         name: 'Luis Jimenez',
-        shortinfo: 'Ingeniero de Sistemas. Interesado en educación, programación competitiva, blockchain, y hardware.',
+        shortinfo: 'Ingeniero de Sistemas con Maestría en Investigación de Operaciones. Interesado en educación, programación competitiva, blockchain, y hardware.',
         information: 'Luis es Ingeniero de Sistemas y Ciencias de la Computación, con Maestría en Investigación de Operaciones. Cuenta con 12 años de experiencia como docente de Ciencias de la Computación. Entre sus intereses investigativos se encuentran la educación de ingeniería, programación competitiva, blockchain y smart contracts, y hardware.',
-        image: 'luis2.jpg',
+        courses: 'Estructuras de Máquina, Compiladores.',
+        image: 'luis3.jpg',
         job: 'projects-leader',
         email: 'luiscu@galileo.edu',
     },
@@ -47,10 +48,11 @@ var staff = [
     },
     {
         name: 'Emily Curin',
-        information: '',
+        shortinfo: 'Ingeniera en Mecatrónica, con Maestría en Automatización Industrial y Sistemas Electrónicos. Coordinación de Club de Ajedrez, Club de Programación Competitiva y apoyo a eventos.',
+        information: 'Ingeniera en Mecatrónica con Maestría en Automatización Industrial y Sistemas Electrónicos, con experiencia en control de motores y soluciones basadas en IoT. Parte del Innovation Lab de la Universidad Galileo, donde se participa en proyectos interdisciplinarios enfocados en la aplicación práctica de la ingeniería. Se integra tecnologías como ESP32, comunicación MQTT y plataformas en la nube para la adquisición y visualización de datos en tiempo real, con un enfoque orientado a usuarios sin formación técnica.\nAdemás, teniendo un rol activo en la comunidad universitaria, siendo fundadora y organizadora del Club Bishop de Ajedrez, promoviendo el desarrollo del pensamiento lógico y estratégico en estudiantes. También colaborando en la administración del Club de Programación Competitiva, apoyando en la organización de actividades y fortaleciendo espacios de aprendizaje colaborativo. Experiencia en docencia, apoyo académico y organización de iniciativas tecnológicas y educativas.',
         image: 'emily.jpg',
         job: 'projects-assistant',
-        email: '',
+        email: 'emily.curin@galileo.edu',
     },
     {
         name: 'Stephanie Sosa',
